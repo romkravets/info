@@ -1,21 +1,21 @@
 @import './variables';
 
 .header {
-   height: 50px;
+   height: 70px;
    width: 100%;
-   background-color: black;
+   background-color: hsl(0, 0%, 20%);
    display: flex;
    justify-content: center;
    position: fixed;
    padding: 0 1rem;
    z-index: 2;
+   opacity: 0.67;
 }
 
 .logo {
-   width: 50px;
-   height: 50px;
-   background-color: aqua;
-   padding-right: 2rem;
+   width: 70px;
+   line-height:70px;
+   color: $white-color;
 }
 
 .menu {
@@ -23,21 +23,42 @@
    align-items: stretch;
    list-style: none;
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-end;
    max-width: $page-content-width;
    width: 100%;
    opacity: 1;
    visibility: visible;
    &__item {
       padding: 0 15px;
-      line-height:50px;
+      line-height:70px;
    }
    &__link {
       color: $white-color;
       text-align: center;
+      font-weight: 300;
+      font-size: 1.1rem;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      &:hover {
+         opacity: .65;
+         transition-duration: 500ms;
+      }
    }
 }
+
+.social-menu {
+   color: rgb(255, 255, 255);
+   width: 20px;
+   height: 20px;
+   &__item {
+      padding: 1rem;
+   }
+}
+
+.icon {
+   background-image: url(../../assets/images/soc-icon/github-logo.png);
+   width: 20px;
+}
+

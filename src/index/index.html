@@ -84,5 +84,13 @@
             <a href="#">Copyright ©2019 This template is made with by Roman Kravets</a>
         </footer>
     </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navMenu = document.querySelector('.header');
+
+        burger.addEventListener('click', () => {
+            navMenu.classList.toggle('nav_opened');
+        })
+    </script>
 </body>
 </html>

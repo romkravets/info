@@ -66,12 +66,27 @@
   transition: 0.4s;
 }
 
+.nav_opened .burger__row:first-child {
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+   transform: rotate(-45deg) translate(-9px, 6px);
+ }
+
+.nav_opened .burger__row_two {
+   opacity: 0;
+}
+
+.nav_opened .burger__row:last-child{
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+   transform: rotate(45deg) translate(-8px, -8px);
+ }
+
 @media (max-width: 454px) {
    .mobile-controls {
      display: flex;
    }
    .header {
       justify-content: space-between;
+      opacity: 0.99;
    }
    .menu {
          visibility: hidden;
@@ -80,7 +95,7 @@
          top: 70px;
          left: 0;
          display: block;
-         background-color: rgba(226, 239, 245, 0.85);
+         background-color: rgba(0, 0, 0, 1);
          padding: 0 34px;
          height: calc(100vh - 70px);
          transform-origin: top center;

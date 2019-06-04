@@ -1,2 +1,43 @@
 @import './variables';
 
+.header {
+   height: 50px;
+   width: 100%;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   padding: 0 1rem;
+   z-index: 2;
+}
+
+.logo {
+   width: 50px;
+   height: 50px;
+   background-color: aqua;
+   padding-right: 2rem;
+}
+
+.menu {
+   display: flex;
+   align-items: stretch;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   max-width: $page-content-width;
+   width: 100%;
+   opacity: 1;
+   visibility: visible;
+   &__item {
+      padding: 0 15px;
+      line-height:50px;
+   }
+   &__link {
+      color: $white-color;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}

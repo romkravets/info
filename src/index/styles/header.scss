@@ -48,17 +48,53 @@
    }
 }
 
-.social-menu {
-   color: rgb(255, 255, 255);
-   width: 20px;
-   height: 20px;
-   &__item {
-      padding: 1rem;
+.mobile-controls {
+   padding: 1rem 1rem;
+   display: none;
+}
+
+.burger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.burger__row {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(250, 240, 240);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 454px) {
+   .mobile-controls {
+     display: flex;
    }
+   .header {
+      justify-content: space-between;
+   }
+   .menu {
+         visibility: hidden;
+         transform: scaleY(0);
+         position: absolute;
+         top: 70px;
+         left: 0;
+         display: block;
+         background-color: rgba(226, 239, 245, 0.85);
+         padding: 0 34px;
+         height: calc(100vh - 70px);
+         transform-origin: top center;
+         &__link {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgb(14, 12, 12);
+            width: 100%;
+      }
+   }
+   .nav_opened > .menu {
+      visibility: visible;
+      transform: scaleY(1);
+   }
+   .nav_opened .menu__item {
+      opacity: 1;
+    }
 }
-
-.icon {
-   background-image: url(../../assets/images/soc-icon/github-logo.png);
-   width: 20px;
-}
-

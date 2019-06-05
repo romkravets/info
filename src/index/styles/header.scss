@@ -1,6 +1,6 @@
 @import './variables';
 
-.header {
+.nav {
    height: 70px;
    width: 100%;
    background-color: hsl(0, 0%, 20%);
@@ -84,7 +84,7 @@
    .mobile-controls {
      display: flex;
    }
-   .header {
+   .nav {
       justify-content: space-between;
       opacity: 0.99;
    }

@@ -10,8 +10,9 @@
 
 <body class="page">
     <div class="page__wrapper">
-        <header class="header page__header">
-            <a class="logo" href="#">LOGO</a>
+        <header class="header">
+            <nav class="nav page__header">
+                <a class="logo" href="#">LOGO</a>
                 <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__link" href="#">Home</a>
@@ -33,8 +34,7 @@
                         <div class="burger__row"></div>
                     </div>
                 </div>
-        </header>
-        <main class="main page__main">
+            </nav>
             <section class="section section__parallax section__parallax_bg-img section__darken section__darken_padding-top">
                 <div class="section__content">
                     <h2 class="section__title">
@@ -43,6 +43,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet repellat totam dolorum, corporis repellendus debitis labore dolor. Aut placeat itaque aliquid similique ea, tenetur laborum aliquam accusamus ratione nisi.</p>
                 </div>
             </section>
+        </header>
+        <main class="main page__main">
             <section class="section section__white">
                 <div class="section__content section__content_white">
                     <h2 class="section__title section__title_darken">
@@ -84,7 +86,7 @@
     </div>
     <script>
         const burger = document.querySelector('.burger');
-        const navMenu = document.querySelector('.header');
+        const navMenu = document.querySelector('.nav');
 
         burger.addEventListener('click', () => {
             navMenu.classList.toggle('nav_opened');

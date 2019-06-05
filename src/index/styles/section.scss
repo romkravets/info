@@ -25,6 +25,18 @@ $color-primary: rgb(64, 201, 204);
    &__white {
       padding-top: 3rem;
    }
+   &__parallax {
+      background-attachment: fixed;
+      background-image: url(https://s3.amazonaws.com/pbblogassets/uploads/2017/06/10130141/Parallax.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+     // height: 100%;
+     &_bg-img {
+        background-image: none;
+        background-color: black;
+     }
+   }
    &__content {
       width: 100%;
       max-width: $page-content-width;

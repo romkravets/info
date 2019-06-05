@@ -13,6 +13,7 @@ html {
   font-family: $base-font-family;
   font-size: $font-size-base;
   color: $base-font-color;
+  scroll-behavior: smooth;
 }
 
 body {

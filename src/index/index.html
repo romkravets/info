@@ -11,30 +11,7 @@
 <body class="page">
     <div class="page__wrapper">
         <header class="header">
-            <nav class="nav page__header">
-                <a class="logo" href="#">LOGO</a>
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#sectionAbout">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#sectionPortfolio">Portfolio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#sectionContact">Contact</a>
-                    </li>
-                </ul>
-                <div class="mobile-controls">
-                    <div class="burger">
-                        <div class="burger__row"></div>
-                        <div class="burger__row"></div>
-                        <div class="burger__row"></div>
-                    </div>
-                </div>
-            </nav>
+            <nav class="nav page__header" id="topNavigation"></nav>
             <section class="section section__parallax section__parallax_bg-img section__darken section__darken_padding-top">
                 <div class="section__content">
                     <h2 class="section__title">
@@ -90,13 +67,5 @@
             <a href="#">Copyright ©2019 This template is made with by Roman Kravets</a>
         </footer>
     </div>
-    <script>
-        const burger = document.querySelector('.burger');
-        const navMenu = document.querySelector('.nav');
-
-        burger.addEventListener('click', () => {
-            navMenu.classList.toggle('nav_opened');
-        });
-    </script>
 </body>
 </html>

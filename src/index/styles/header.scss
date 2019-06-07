@@ -1,7 +1,7 @@
 @import './variables';
 
 .nav {
-   height: 70px;
+   height: $header-base-height;
    width: 100%;
    background-color: hsl(0, 0%, 20%);
    display: flex;
@@ -13,8 +13,8 @@
 }
 
 .logo {
-   width: 70px;
-   line-height:70px;
+   width: $header-base-height;
+   line-height: $header-base-height;
    color: $white-color;
 }
 
@@ -30,7 +30,7 @@
    visibility: visible;
    &__item {
       padding: 0 1rem;
-      line-height:70px;
+      line-height: $header-base-height;
    }
    &__link {
       color: $white-color;
@@ -96,7 +96,7 @@
          visibility: hidden;
          transform: scaleY(0);
          position: absolute;
-         top: 70px;
+         top: $header-base-height;
          left: 0;
          display: block;
          background-color: transparent;

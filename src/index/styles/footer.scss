@@ -10,12 +10,9 @@
       justify-content: space-around;
       align-items: center;
       flex-basis: 33%; height: 270px;
-      background-color: aqua;
+      flex-shrink: 2;
    }
    &__item {
       display: flex;
-      &:nth-child(2n) {
-         background-color: azure;
-      }
    }
 }

@@ -1,11 +1,21 @@
 @import './variables.scss';
 
 .footer {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
    min-height: 270px;
-   color: $white-color;
+   color: rgb(0, 0, 0);
    background-color: rgb(250, 250, 250);
+   &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-basis: 33%; height: 270px;
+      background-color: aqua;
+   }
+   &__item {
+      display: flex;
+      &:nth-child(2n) {
+         background-color: azure;
+      }
+   }
 }

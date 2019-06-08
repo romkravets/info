@@ -1,23 +1,13 @@
 import './index.scss';
+import { navLinks } from './scripts/api/api';
+import  { sliderData } from './scripts/api/api';
+import { footerData } from './scripts/api/api';
 import { TopNavigation } from './scripts/nav/nav';
+import { HeaderSection } from './scripts/headerSection/headerSection';
+import { FooterSection } from './scripts/footerSection/footerSection';
 
-const navLinks = [
-   {
-      title: "Home",
-      link: "#"
-   },
-   {
-      title: "About",
-      link: "#sectionAbout"
-   },
-   {
-      title: "Portfolio",
-      link: "#sectionPortfolio"
-   },
-   {
-      title: "Contact",
-      link: "#sectionContact"
-   },
-]
+
 
 new TopNavigation(document.querySelector('#topNavigation'), navLinks);
+new HeaderSection(document.querySelector('#headerSection'), sliderData);
+new FooterSection(document.querySelector('#footerSection'), footerData);

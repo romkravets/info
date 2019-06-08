@@ -16,7 +16,7 @@ export const navLinks = [
       title: "Contact",
       link: "#sectionContact"
    },
-]
+];
 
 
 export const sliderData = [
@@ -51,3 +51,19 @@ export const sliderData = [
      desc: 'Kremenets is a very compact town, and all the main tourist attractions are located close to one another. Generally, one day is enough for travelers to see this wonderful place and feel its unique spirit.'
    }
  ];
+
+ export const footerData = [
+   {
+     title: 'Element 1',
+   },
+   {
+    title: 'Element 2',
+  },
+  {
+    title: 'Element 3',
+  },
+  {
+    title: 'Element 4',
+  },
+
+ ]

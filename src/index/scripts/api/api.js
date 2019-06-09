@@ -52,6 +52,13 @@ export const sliderData = [
    }
  ];
 
+ export const sectionData = [
+  {
+     title: 'I am an experienced photographer Let’s talk',
+     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet repellat totam dolorum, corporis repellendus debitis labore dolor. Aut placeat itaque aliquid similique ea, tenetur laborum aliquam accusamus ratione nisi.'
+  }
+]
+
  export const footerData = [
    {
      title: 'Element 1',
@@ -66,4 +73,4 @@ export const sliderData = [
     title: 'Element 4',
   },
 
- ]
+ ];

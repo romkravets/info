@@ -26,6 +26,14 @@ export class HeaderSection {
            <div class="slider__image ${i == 0 ? 'visible' : ''}" data-slider="slide-${i}">
              <div class="slide__image">
               <img src="${img}" />
+              <div class="slider__caption">
+               <div class="slider__caption-content">
+                 <div class="slider__caption-title">
+                   <h2>${name}</h2>
+                 </div>
+                 <p>${desc}</p>
+               </div>
+             </div>
              </div>
            </div>
          `;

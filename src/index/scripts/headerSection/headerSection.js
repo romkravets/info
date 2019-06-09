@@ -61,7 +61,7 @@ export class HeaderSection {
          slides[currentSlide].classList.remove(VISIBLE_CLASS);
          currentSlide = (currentSlide + 1) % slides.length;
          slides[currentSlide].classList.add(VISIBLE_CLASS);
-         }, 7000);
+         }, 3000);
 
       }
 }

@@ -10,9 +10,6 @@ import { Section } from './scripts/section/section';
 import { FooterSection } from './scripts/footerSection/footerSection';
 
 
-
-
-
 new TopNavigation(document.querySelector('#topNavigation'), navLinks);
 new HeaderSection(document.querySelector('#headerSection'), sliderData);
 new Section(document.querySelector('#sectionWork'), sectionData);

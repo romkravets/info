@@ -1,4 +1,3 @@
-
 export class TopNavigation {
    constructor (rootElement, navLinks) {
       this.rootElement = rootElement;

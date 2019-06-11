@@ -10,7 +10,17 @@ $black-color: rgb(0, 0, 0);
 $transition-delay: 100ms;
 
 
+$default-font: "lato-regular", sans-serif;
 $accent-color: rgb(255, 255, 255);
+$base-font-color: rgb(13, 37, 62);
+$gray-text-color: rgb(197, 203, 210);
+$oval-color: rgb(244, 248, 252);
 $button-yellow: rgb(255, 204, 1);
 $blue-color: #1e88f5;
+
 $grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
